@@ -14,7 +14,7 @@ function App() {
   return (
     <div style={{ backgroundColor: "#F0F0F0" }}>
       <Container>
-        <div className="grid grid-cols-4 grid-rows-6 gap-6 p-4">
+        <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-4 md:grid-rows-6 gap-6 p-4">
           <Card
             title={
               <>
@@ -29,7 +29,8 @@ function App() {
             image={createPost}
             imageSize={175}
             imgAlt="Create Post"
-            rowSpan="row-span-3"
+            rowSpan="row-span-1 md:row-span-3"
+            colSpan="col-span-4 md:col-span-1"
           />
           <Card
             title={
@@ -46,8 +47,8 @@ function App() {
             imageSize={250}
             imgAlt="Five Stars"
             description="Over 4,000 5-star reviews"
-            colSpan="col-span-2"
-            rowSpan="row-span-2"
+            colSpan="row-span-1 md:col-span-2"
+            rowSpan="col-span-4 md:row-span-2"
           />
           <Card
             title="Schedule to social media."
@@ -57,7 +58,8 @@ function App() {
             imageSize={200}
             imgAlt="Schedule Posts"
             description="Optimize post timings to publish content at the perfect time for your audience."
-            rowSpan="row-span-4"
+            rowSpan="row-span-1 md:row-span-4"
+            colSpan="col-span-4 md:col-span-1"
           />
           <Card
             title="Manage multiple accounts and platforms."
@@ -66,7 +68,8 @@ function App() {
             image={multiplePlatforms}
             imageSize={250}
             imgAlt="Multiple Platforms"
-            rowSpan="row-span-2"
+            rowSpan="row-span-1 md:row-span-2"
+            colSpan="col-span-4 md:col-span-1"
           />
           <Card
             title="Maintain a consistent posting schedule"
@@ -75,7 +78,8 @@ function App() {
             imageSize={150}
             image={consistentSchedule}
             imgAlt="Consistent Schedule"
-            rowSpan="row-span-2"
+            rowSpan="row-span-1 md:row-span-2"
+            colSpan="col-span-4 md:col-span-1"
           />
           <Card
             title="Write your content using AI."
@@ -84,8 +88,8 @@ function App() {
             image={aiContent}
             imageSize={200}
             imgAlt="AI Content"
-            rowSpan="row-span-3"
-            colSpan="col-span-1"
+            rowSpan="row-span-1 md:row-span-3"
+            colSpan="col-span-4 md:col-span-1"
           />
           <Card
             title={
@@ -101,8 +105,8 @@ function App() {
             image={audienceGrowth}
             imageSize={200}
             imgAlt="Audience Growth"
-            colSpan="col-span-1"
-            rowSpan="row-span-2"
+            rowSpan="row-span-1 md:row-span-2"
+            colSpan="col-span-4 md:col-span-1"
           />
           <Card
             title="Grow followers with non-stop content."
@@ -111,8 +115,8 @@ function App() {
             image={growFollowers}
             imageSize={200}
             imgAlt="Grow Followers"
-            colSpan="col-span-2"
-            rowSpan="row-span-2"
+            rowSpan="row-span-1 md:row-span-2"
+            colSpan="col-span-4 md:col-span-2"
           />
         </div>
       </Container>
