@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
@@ -6,10 +6,7 @@ interface Props {
 
 const Container: FC<Props> = ({ children }) => {
   return (
-    <div
-      className="container mx-auto p-4 min-h-screen"
-      style={{ backgroundColor: "#F0F0F0" }}
-    >
+    <div className="container mx-auto p-4 min-h-screen bg-[#F0F0F0]">
       {children}
     </div>
   );
