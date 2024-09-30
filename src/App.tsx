@@ -7,17 +7,15 @@ import multiplePlatforms from "./assets/images/illustration-multiple-platforms.w
 import consistentSchedule from "./assets/images/illustration-consistent-schedule.webp";
 import growFollowers from "./assets/images/illustration-grow-followers.webp";
 import aiContent from "./assets/images/illustration-ai-content.webp";
+import audienceGrowth from "./assets/images/illustration-audience-growth.webp";
 
 function App() {
   return (
     <div style={{ backgroundColor: "#F0F0F0" }}>
       <Container>
-        <div
-          className="grid grid-cols-4 grid-rows-6 gap-4 p-4"
-          style={{ maxHeight: "80vh" }}
-        >
+        <div className="grid grid-cols-4 grid-rows-6 gap-6 p-4">
           <div
-            className="row-span-3 flex flex-col justify-evenly items-center px-6"
+            className="row-span-3 flex flex-col justify-evenly items-center p-6"
             style={{ backgroundColor: "#EDE4D8" }}
           >
             <div>
@@ -31,10 +29,13 @@ function App() {
             </div>
           </div>
           <div
-            className="col-span-2 row-span-2"
+            className="col-span-2 row-span-2 rounded-md flex flex-col justify-evenly items-center p-6"
             style={{ backgroundColor: "#7652DA" }}
           >
-            <h1>Social Media 10x Fast with AI</h1>
+            <h1 className="font-bold text-white text-5xl">
+              Social Media <span style={{ color: "#FFCD69" }}>10x</span> Fast
+              with AI
+            </h1>
             <div
               style={{
                 display: "flex",
@@ -43,31 +44,43 @@ function App() {
                 textAlign: "center",
               }}
             >
-              <img src={fiveStars} alt="Five Stars" />
+              <img src={fiveStars} alt="Five Stars" width={250} />
             </div>
-            <div>Over 4,000 5-star reviews</div>
+            <h2 className="text-white">Over 4,000 5-star reviews</h2>
           </div>
           <div
-            className="row-span-4"
+            className="row-span-4 rounded-md flex flex-col justify-evenly items-center p-6"
             style={{
               backgroundColor: "#D4C8F7",
             }}
           >
-            <h4>Schedule to social media.</h4>
+            <h2 className="font-bold text-black text-2xl">
+              Schedule to social media.
+            </h2>
             <img src={schedulePosts} alt="Schedule Posts" width={200} />
             <div>
-              <p>
+              <p className=" text-black text-xl">
                 Optimize post timings to publish content at the perfect time for
                 your audience.
               </p>
             </div>
           </div>
-          <div className="row-span-2" style={{ backgroundColor: "#FFF" }}>
+          <div
+            className="row-span-2 rounded-md flex flex-col justify-evenly items-center p-6"
+            style={{ backgroundColor: "#FFF" }}
+          >
             <img src={multiplePlatforms} alt="Multiple Platforms" width={250} />
-            <h2>Manage multiple accounts and platforms.</h2>
+            <h2 className="font-bold text-black text-2xl">
+              Manage multiple accounts and platforms.
+            </h2>
           </div>
-          <div className="row-span-2" style={{ backgroundColor: "#FFCD69" }}>
-            <h2>Maintain a consistent posting schedule</h2>
+          <div
+            className="row-span-2 rounded-md flex flex-col justify-evenly items-center p-6"
+            style={{ backgroundColor: "#FFCD69" }}
+          >
+            <h2 className="font-bold text-black text-2xl">
+              Maintain a consistent posting schedule
+            </h2>
             <img
               src={consistentSchedule}
               alt="Consistent Schedule"
@@ -75,29 +88,32 @@ function App() {
             />
           </div>
           <div
-            className="row-span-3 col-span-1"
+            className="row-span-3 col-span-1 rounded-md flex flex-col justify-evenly items-center text-left"
             style={{ backgroundColor: "#FFCD69" }}
           >
-            <h2>Write your content using AI.</h2>
+            <h2 className="font-bold text-black text-2xl text-left">
+              Write your content using AI.
+            </h2>
             <img src={aiContent} alt="AI Content" width={200} />
           </div>
           <div
-            className="col-span-1 row-span-2"
+            className="col-span-1 row-span-2 rounded-md flex flex-col justify-evenly items-center p-6"
             style={{ backgroundColor: "#FFF" }}
           >
-            <h1>{">56%"}</h1>
-            <p>faster audience growth</p>
-            <div>[three image icons in a row]</div>
+            <h1 className="font-bold text-black text-5xl">{">56%"}</h1>
+            <p className=" text-black text-xl">faster audience growth</p>
+            {/* <div>[three image icons in a row]</div> */}
+            <img src={audienceGrowth} alt="Audience Growth" width={200} />
           </div>
           <div
-            className="col-span-2 row-span-2"
+            className="col-span-2 row-span-2 rounded-md flex flex-row justify-evenly items-center p-6"
             style={{ backgroundColor: "#7652DA" }}
           >
-            <div className="flex">
-              <img src={growFollowers} alt="Grow Followers" width={200} />
-              <div>
-                <h2>Grow followers with non-stop content.</h2>
-              </div>
+            <img src={growFollowers} alt="Grow Followers" width={200} />
+            <div>
+              <h2 className=" text-white text-5xl">
+                Grow followers with non-stop content.
+              </h2>
             </div>
           </div>
         </div>
