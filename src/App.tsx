@@ -12,7 +12,7 @@ import Card from "./components/Card";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "#F0F0F0" }}>
+    <div className="font-MyWebFont1" style={{ backgroundColor: "#F0F0F0" }}>
       <Container>
         <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-4 md:grid-rows-6 gap-6 p-4">
           <Card
