@@ -18,8 +18,10 @@ function App() {
           <Card
             title={
               <>
-                Create and schedule content{" "}
-                <span style={{ color: "#7651DB" }}>quicker.</span>
+                <h2 className="italic font-bold text-black text-2xl">
+                  Create and schedule content{" "}
+                  <span style={{ color: "#7651DB" }}>quicker.</span>
+                </h2>
               </>
             }
             bgColor="#EDE4D8"
@@ -32,8 +34,10 @@ function App() {
           <Card
             title={
               <>
-                Social Media <span style={{ color: "#FFCD69" }}>10x</span> Fast
-                with AI
+                <h2 className="font-bold text-white text-2xl">
+                  Social Media <span style={{ color: "#FFCD69" }}>10x</span>{" "}
+                  Fast with AI
+                </h2>
               </>
             }
             bgColor="#7652DA"
@@ -84,7 +88,14 @@ function App() {
             colSpan="col-span-1"
           />
           <Card
-            title=">56% faster audience growth"
+            title={
+              <>
+                <span className="font-bold text-4xl text-black">{">56%"}</span>
+                <h2 className="font-bold text-black text-2xl">
+                  faster audience growth
+                </h2>
+              </>
+            }
             bgColor="#FFF"
             textColor="black"
             image={audienceGrowth}
